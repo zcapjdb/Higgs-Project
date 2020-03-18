@@ -1,0 +1,1424 @@
+2020-02-15 20:16:59.620338: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-02-15 20:16:59.656804: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300000000 Hz
+2020-02-15 20:16:59.658540: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5622ebd6dc60 executing computations on platform Host. Devices:
+2020-02-15 20:16:59.658568: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+Using TensorFlow backend.
+WARNING:tensorflow:Not all devices in `tf.distribute.Strategy` are visible to TensorFlow.
+/mnt/storage/jbarr/myconda/lib/python3.7/site-packages/mpl_toolkits/axes_grid/__init__.py:12: MatplotlibDeprecationWarning: 
+The mpl_toolkits.axes_grid module was deprecated in Matplotlib 2.1 and will be removed two minor releases later. Use mpl_toolkits.axes_grid1 and mpl_toolkits.axisartist, which provide the same functionality instead.
+  obj_type='module')
+WARNING:tensorflow:From /mnt/storage/jbarr/myconda/lib/python3.7/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-02-15 20:17:00.913227: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+WARNING:tensorflow:From /mnt/storage/jbarr/myconda/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+Training Model 0/100
+2 Jet using the DNN: 2.839983594670748 ± 0.09708009250521904
+3 Jet using the DNN: 1.5268202484159303 ± 0.03536203025947068
+Combined Sensitivity 3.2243893823438676 ± 0.08713051505447027
+Training Model 1/100
+2 Jet using the DNN: 2.7526163853634813 ± 0.09452971175155324
+3 Jet using the DNN: 1.5257676255739936 ± 0.03790090782233421
+Combined Sensitivity 3.1471993601011707 ± 0.0846951304309211
+Training Model 2/100
+2 Jet using the DNN: 2.6646219691175848 ± 0.08057312429505244
+3 Jet using the DNN: 1.607049519733232 ± 0.039989137577603515
+Combined Sensitivity 3.1117227378381394 ± 0.07202077029544768
+Training Model 3/100
+2 Jet using the DNN: 2.7666847495578684 ± 0.09153153049763739
+3 Jet using the DNN: 1.5381357031468 ± 0.042240576192540895
+Combined Sensitivity 3.1655024790277744 ± 0.08259059800396552
+Training Model 4/100
+2 Jet using the DNN: 2.7555910272683266 ± 0.09519007962066844
+3 Jet using the DNN: 1.578467983158341 ± 0.04305577234195054
+Combined Sensitivity 3.175664195631785 ± 0.08532586392099255
+Training Model 5/100
+2 Jet using the DNN: 2.723988153739892 ± 0.0904436990661091
+3 Jet using the DNN: 1.61810129445083 ± 0.04552144350680483
+Combined Sensitivity 3.1683376178713525 ± 0.08116022733845729
+Training Model 6/100
+2 Jet using the DNN: 2.7929857982976682 ± 0.09746205364585289
+3 Jet using the DNN: 1.5542646592852363 ± 0.04191653605828535
+Combined Sensitivity 3.1963273143712168 ± 0.08756857762595789
+Training Model 7/100
+2 Jet using the DNN: 2.6790926357118874 ± 0.09612206660237112
+3 Jet using the DNN: 1.522167410477884 ± 0.03664055187431529
+Combined Sensitivity 3.081319680955972 ± 0.08551216253593205
+Training Model 8/100
+2 Jet using the DNN: 2.7621828100260766 ± 0.09970177565462778
+3 Jet using the DNN: 1.5555224621834773 ± 0.04105538979082611
+Combined Sensitivity 3.1700637227603012 ± 0.08917873606087853
+Training Model 9/100
+2 Jet using the DNN: 2.8636249479448024 ± 0.10039736086658707
+3 Jet using the DNN: 1.599700548543179 ± 0.052745221356755044
+Combined Sensitivity 3.280150863527655 ± 0.09134525832436115
+Training Model 10/100
+2 Jet using the DNN: 2.7602842048851732 ± 0.09674139864099843
+3 Jet using the DNN: 1.5791324068118102 ± 0.04571844149953299
+Combined Sensitivity 3.1800673027440522 ± 0.08698591458501474
+Training Model 11/100
+2 Jet using the DNN: 2.7925920775704234 ± 0.09149772592915181
+3 Jet using the DNN: 1.5743390098114916 ± 0.04044432576723518
+Combined Sensitivity 3.205793790861059 ± 0.08214184815928281
+Training Model 12/100
+2 Jet using the DNN: 2.7779895592238546 ± 0.09204370614550442
+3 Jet using the DNN: 1.5678050436284752 ± 0.040213634777624366
+Combined Sensitivity 3.189864988676422 ± 0.08255977929739243
+Training Model 13/100
+2 Jet using the DNN: 2.772064663640785 ± 0.09170075184668297
+3 Jet using the DNN: 1.5708102694781865 ± 0.04474377473032557
+Combined Sensitivity 3.186186969106495 ± 0.08277540476612538
+Training Model 14/100
+2 Jet using the DNN: 2.694606480106646 ± 0.09221437219826385
+3 Jet using the DNN: 1.5569939578645207 ± 0.03945974272320278
+Combined Sensitivity 3.1120948358717078 ± 0.0822482356419111
+Training Model 15/100
+2 Jet using the DNN: 2.688194849704416 ± 0.09342504796237502
+3 Jet using the DNN: 1.57474267894792 ± 0.04109878687231962
+Combined Sensitivity 3.115478463234407 ± 0.08324559990846367
+Training Model 16/100
+2 Jet using the DNN: 2.6971385314947036 ± 0.08767419447401276
+3 Jet using the DNN: 1.5346103853992203 ± 0.04130308713267533
+Combined Sensitivity 3.1031573103934886 ± 0.07889286549364478
+Training Model 17/100
+2 Jet using the DNN: 2.7543545520480284 ± 0.0919244366490532
+3 Jet using the DNN: 1.5837550989164182 ± 0.04078031706749462
+Combined Sensitivity 3.177223506732167 ± 0.0822416795353798
+Training Model 18/100
+2 Jet using the DNN: 2.6769437944218 ± 0.08668903307085639
+3 Jet using the DNN: 1.6185834974017856 ± 0.043239035169508465
+Combined Sensitivity 3.1282328264620554 ± 0.07748315467396802
+Training Model 19/100
+2 Jet using the DNN: 2.6898704494425423 ± 0.09606765783935985
+3 Jet using the DNN: 1.501271828267166 ± 0.03548144620549758
+Combined Sensitivity 3.0804577804496627 ± 0.08565044223307244
+Training Model 20/100
+2 Jet using the DNN: 2.7343241092102546 ± 0.09412295060030344
+3 Jet using the DNN: 1.5066183873711183 ± 0.0371034580705223
+Combined Sensitivity 3.1219268568262777 ± 0.08435933787609629
+Training Model 21/100
+2 Jet using the DNN: 2.7543809254438543 ± 0.08889357623396157
+3 Jet using the DNN: 1.6315690553132682 ± 0.04597938210701154
+Combined Sensitivity 3.2013484447502387 ± 0.0799917534266507
+Training Model 22/100
+2 Jet using the DNN: 2.772924865149269 ± 0.09985685724052426
+3 Jet using the DNN: 1.5274831028149198 ± 0.0441073495991228
+Combined Sensitivity 3.1658043112530168 ± 0.09001637173209302
+Training Model 23/100
+2 Jet using the DNN: 2.6628819295867814 ± 0.09132798874369397
+3 Jet using the DNN: 1.4840032453654561 ± 0.03354836923857918
+Combined Sensitivity 3.0484759804162844 ± 0.08143062968988907
+Training Model 24/100
+2 Jet using the DNN: 2.6781208238531855 ± 0.09104801499214693
+3 Jet using the DNN: 1.5780883342464216 ± 0.04685297397870543
+Combined Sensitivity 3.1084874035197103 ± 0.08196949046889909
+Training Model 25/100
+2 Jet using the DNN: 2.704831574441467 ± 0.10786251754306435
+3 Jet using the DNN: 1.5718091985000924 ± 0.04258152996382766
+Combined Sensitivity 3.128369863456846 ± 0.09568199883494188
+Training Model 26/100
+2 Jet using the DNN: 2.794231546420191 ± 0.12814205108781218
+3 Jet using the DNN: 1.534379833274314 ± 0.037046912748125826
+Combined Sensitivity 3.1877972657885074 ± 0.11372826640637436
+Training Model 27/100
+2 Jet using the DNN: 2.65876708017874 ± 0.09736035352223041
+3 Jet using the DNN: 1.5833573957849811 ± 0.04098547073667878
+Combined Sensitivity 3.0945214540263217 ± 0.08623916826087541
+Training Model 28/100
+2 Jet using the DNN: 2.7762567720353832 ± 0.09429164972973746
+3 Jet using the DNN: 1.470870309953253 ± 0.034563285009248934
+Combined Sensitivity 3.1418244911156803 ± 0.08487699052581221
+Training Model 29/100
+2 Jet using the DNN: 2.6978820851835037 ± 0.1063124173330933
+3 Jet using the DNN: 1.5615303497430146 ± 0.0398640048736089
+Combined Sensitivity 3.117201433773992 ± 0.09415357121796131
+Training Model 30/100
+2 Jet using the DNN: 2.763588198315572 ± 0.09035551717297703
+3 Jet using the DNN: 1.5504747527333993 ± 0.04657102234672807
+Combined Sensitivity 3.168815502476092 ± 0.08202936610944674
+Training Model 31/100
+2 Jet using the DNN: 2.730280332672211 ± 0.08698232026237426
+3 Jet using the DNN: 1.6258530078258473 ± 0.043339219354947715
+Combined Sensitivity 3.1777080888642106 ± 0.0779552511959635
+Training Model 32/100
+2 Jet using the DNN: 2.762018127102842 ± 0.10282253209385658
+3 Jet using the DNN: 1.5710283201893878 ± 0.04026450511906252
+Combined Sensitivity 3.17755788574839 ± 0.09156629805941605
+Training Model 33/100
+2 Jet using the DNN: 2.768304152813094 ± 0.0960065698220163
+3 Jet using the DNN: 1.5692301500230788 ± 0.038458956333505136
+Combined Sensitivity 3.182136255131712 ± 0.08564729447100856
+Training Model 34/100
+2 Jet using the DNN: 2.7261569448461698 ± 0.11052308231949512
+3 Jet using the DNN: 1.5612882867167595 ± 0.04112531858439983
+Combined Sensitivity 3.1415844413562968 ± 0.09806160239908317
+Training Model 35/100
+2 Jet using the DNN: 2.7016062766985702 ± 0.09019715817990702
+3 Jet using the DNN: 1.5615232046596215 ± 0.04325915652717934
+Combined Sensitivity 3.1204216370528464 ± 0.08103609363393263
+Training Model 36/100
+2 Jet using the DNN: 2.7808050278446617 ± 0.09207004302267816
+3 Jet using the DNN: 1.5494137862833295 ± 0.04240525789050081
+Combined Sensitivity 3.1833252557680924 ± 0.08303423201795215
+Training Model 37/100
+2 Jet using the DNN: 2.7063824729107826 ± 0.10571563994413409
+3 Jet using the DNN: 1.5331100393778034 ± 0.03708868273672754
+Combined Sensitivity 3.1104553497068066 ± 0.09378129513117481
+Training Model 38/100
+2 Jet using the DNN: 2.7170107287517413 ± 0.10794219658361975
+3 Jet using the DNN: 1.5087237027538682 ± 0.03656241830377064
+Combined Sensitivity 3.1077957641073217 ± 0.09602392260951555
+Training Model 39/100
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+2 Jet using the DNN: 2.792893595840934 ± 0.09435245542346495
+3 Jet using the DNN: 1.574619387731065 ± 0.0434220692383567
+Combined Sensitivity 3.206194138524344 ± 0.08491130435071889
+Training Model 40/100
+2 Jet using the DNN: 2.8737104891710565 ± 0.10934737140233815
+3 Jet using the DNN: 1.5876235244854522 ± 0.04129351293252774
+Combined Sensitivity 3.283102257175576 ± 0.09777295451587666
+Training Model 41/100
+2 Jet using the DNN: 2.7597663977094906 ± 0.08562709416084516
+3 Jet using the DNN: 1.53177447268039 ± 0.04390038808368608
+Combined Sensitivity 3.15636556898622 ± 0.07784027640783797
+Training Model 42/100
+2 Jet using the DNN: 2.722368935435928 ± 0.09137016708186353
+3 Jet using the DNN: 1.654210760542887 ± 0.050448468480094016
+Combined Sensitivity 3.1855463991162374 ± 0.0823623478694497
+Training Model 43/100
+2 Jet using the DNN: 2.7030071277169228 ± 0.08526592932572015
+3 Jet using the DNN: 1.6534000223233305 ± 0.050032515921144466
+Combined Sensitivity 3.168592616021706 ± 0.07728059884708398
+Training Model 44/100
+2 Jet using the DNN: 2.8767665855808 ± 0.11423164691518332
+3 Jet using the DNN: 1.552211073157839 ± 0.04034413473929765
+Combined Sensitivity 3.2688140362443416 ± 0.10234028923779283
+Training Model 45/100
+2 Jet using the DNN: 2.7954687872169433 ± 0.10024962155592224
+3 Jet using the DNN: 1.6058938165983463 ± 0.04202120151746257
+Combined Sensitivity 3.2239014703450493 ± 0.0894118004275262
+Training Model 46/100
+2 Jet using the DNN: 2.817711830720085 ± 0.10144884439665472
+3 Jet using the DNN: 1.5570727824859685 ± 0.040535282969809384
+Combined Sensitivity 3.2193129097586226 ± 0.09093205230419636
+Training Model 47/100
+2 Jet using the DNN: 2.7271929637444456 ± 0.10616694068281576
+3 Jet using the DNN: 1.5339313171463247 ± 0.037935643483273836
+Combined Sensitivity 3.1289817428709092 ± 0.09438449656682835
+Training Model 48/100
+2 Jet using the DNN: 2.7120831412446655 ± 0.0850113583732072
+3 Jet using the DNN: 1.6141611109828302 ± 0.045261702788273926
+Combined Sensitivity 3.1560911040768227 ± 0.07663171396849563
+Training Model 49/100
+2 Jet using the DNN: 2.6653467563766218 ± 0.09789820401904342
+3 Jet using the DNN: 1.5297586381324157 ± 0.03787989090734991
+Combined Sensitivity 3.0731473805641216 ± 0.08697584108294643
+Training Model 50/100
+2 Jet using the DNN: 2.758580458392226 ± 0.08976975504040012
+3 Jet using the DNN: 1.5370186865004687 ± 0.03877896369912651
+Combined Sensitivity 3.157877861487852 ± 0.08065833728528597
+Training Model 51/100
+2 Jet using the DNN: 2.71512954391685 ± 0.10770009613563872
+3 Jet using the DNN: 1.575995843859374 ± 0.04320176551643273
+Combined Sensitivity 3.139377540231844 ± 0.09563727438178304
+Training Model 52/100
+2 Jet using the DNN: 2.6494965043389476 ± 0.09059825743524123
+3 Jet using the DNN: 1.5236211963601547 ± 0.038154027173858754
+Combined Sensitivity 3.056346393408681 ± 0.08080846047825557
+Training Model 53/100
+2 Jet using the DNN: 2.6525382027113498 ± 0.08405038188519212
+3 Jet using the DNN: 1.5690842907471745 ± 0.038951090229845865
+Combined Sensitivity 3.0818800152362713 ± 0.0750101693174605
+Training Model 54/100
+2 Jet using the DNN: 2.7840158033512026 ± 0.10742743196198358
+3 Jet using the DNN: 1.5707448485198388 ± 0.04741034344143379
+Combined Sensitivity 3.19655805085108 ± 0.09641982079033658
+Training Model 55/100
+2 Jet using the DNN: 2.797734096927801 ± 0.10056250282294694
+3 Jet using the DNN: 1.5520127453050445 ± 0.038861634574386836
+Combined Sensitivity 3.19938425930705 ± 0.08993586855826677
+Training Model 56/100
+2 Jet using the DNN: 2.7821764767326527 ± 0.1019710346611918
+3 Jet using the DNN: 1.5359253579054826 ± 0.03822951583792032
+Combined Sensitivity 3.1779824815032574 ± 0.09116289961552514
+Training Model 57/100
+2 Jet using the DNN: 2.7390461986531514 ± 0.09733533618161688
+3 Jet using the DNN: 1.57144799356351 ± 0.04113767618337572
+Combined Sensitivity 3.157819322702149 ± 0.08687374343304508
+Training Model 58/100
+2 Jet using the DNN: 2.7469316403391364 ± 0.08978875080607869
+3 Jet using the DNN: 1.5081583245922738 ± 0.036890512642139876
+Combined Sensitivity 3.133715840457337 ± 0.08068403654956677
+Training Model 59/100
+2 Jet using the DNN: 2.780784576128215 ± 0.09186214176747187
+3 Jet using the DNN: 1.5786033883856843 ± 0.03892868425795605
+Combined Sensitivity 3.1976165368372955 ± 0.08216641602196091
+Training Model 60/100
+2 Jet using the DNN: 2.7349883592433555 ± 0.09577011302696455
+3 Jet using the DNN: 1.6202322667586488 ± 0.045094794254589204
+Combined Sensitivity 3.178885641768595 ± 0.08554245650555693
+Training Model 61/100
+2 Jet using the DNN: 2.683313546769029 ± 0.08625575840768794
+3 Jet using the DNN: 1.4767323976035756 ± 0.0344229756838515
+Combined Sensitivity 3.062827152224916 ± 0.07736896737709907
+Training Model 62/100
+2 Jet using the DNN: 2.6591463370136803 ± 0.09464556527649762
+3 Jet using the DNN: 1.594781915613692 ± 0.04142226314082258
+Combined Sensitivity 3.100707757919432 ± 0.08391683867593965
+Training Model 63/100
+2 Jet using the DNN: 2.7510796199555285 ± 0.09546788720730932
+3 Jet using the DNN: 1.5839724958179646 ± 0.0443513777170435
+Combined Sensitivity 3.174493336399125 ± 0.08564294004779588
+Training Model 64/100
+2 Jet using the DNN: 2.7359356107945167 ± 0.10837782983905553
+3 Jet using the DNN: 1.588123013629004 ± 0.04328831519486621
+Combined Sensitivity 3.1634598737508326 ± 0.09621743366054285
+Training Model 65/100
+2 Jet using the DNN: 2.803399825658818 ± 0.10080726876870062
+3 Jet using the DNN: 1.5626530447219271 ± 0.038909289172852295
+Combined Sensitivity 3.2095069902841153 ± 0.09006673038228973
+Training Model 66/100
+2 Jet using the DNN: 2.6740324807995823 ± 0.09920705611524333
+3 Jet using the DNN: 1.5731530687640498 ± 0.04379286021810142
+Combined Sensitivity 3.102460360122739 ± 0.08834360801817634
+Training Model 67/100
+2 Jet using the DNN: 2.736147937976543 ± 0.09337605760783732
+3 Jet using the DNN: 1.4755683853692 ± 0.03258530074236206
+Combined Sensitivity 3.1086665305874086 ± 0.08362933047118566
+Training Model 68/100
+2 Jet using the DNN: 2.7655048967507123 ± 0.09062130801995576
+3 Jet using the DNN: 1.5754044282284678 ± 0.04125082441361832
+Combined Sensitivity 3.182752966605174 ± 0.08134544831884302
+Training Model 69/100
+2 Jet using the DNN: 2.792230113556493 ± 0.11491940099668847
+3 Jet using the DNN: 1.5362964506883814 ± 0.040400922338442564
+Combined Sensitivity 3.186966550098922 ± 0.1025517972411534
+Training Model 70/100
+2 Jet using the DNN: 2.7039794554615777 ± 0.09464387220363546
+3 Jet using the DNN: 1.5993759274521324 ± 0.043492846634489345
+Combined Sensitivity 3.141577351088408 ± 0.08441636180972621
+Training Model 71/100
+2 Jet using the DNN: 2.694907168140324 ± 0.08501865478324197
+3 Jet using the DNN: 1.5593074103271343 ± 0.04082007317847235
+Combined Sensitivity 3.113513167596247 ± 0.07637498203397121
+Training Model 72/100
+2 Jet using the DNN: 2.7240412735015758 ± 0.09974116598231125
+3 Jet using the DNN: 1.5591386203973883 ± 0.04005407635479903
+Combined Sensitivity 3.1386803114294324 ± 0.08882195309707425
+Training Model 73/100
+2 Jet using the DNN: 2.7694443535464375 ± 0.10765307256539024
+3 Jet using the DNN: 1.4690554328504652 ± 0.033606885695472204
+Combined Sensitivity 3.1349554848797636 ± 0.09639667781578251
+Training Model 74/100
+2 Jet using the DNN: 2.6967921131937835 ± 0.09267536995157682
+3 Jet using the DNN: 1.5842640542456157 ± 0.04341414504830492
+Combined Sensitivity 3.1277116707521087 ± 0.08287769152772617
+Training Model 75/100
+2 Jet using the DNN: 2.784100647433317 ± 0.11416203017574265
+3 Jet using the DNN: 1.5983419152938312 ± 0.04899620820392675
+Combined Sensitivity 3.2102824320024816 ± 0.10196742274473378
+Training Model 76/100
+2 Jet using the DNN: 2.7473715080000147 ± 0.09482755607548986
+3 Jet using the DNN: 1.564066655994045 ± 0.04466879679357122
+Combined Sensitivity 3.1613849350186176 ± 0.08532073667173044
+Training Model 77/100
+2 Jet using the DNN: 2.738497371904676 ± 0.08573634620131276
+3 Jet using the DNN: 1.5830672891805595 ± 0.04288878613112717
+Combined Sensitivity 3.163142408745187 ± 0.07726768319251076
+Training Model 78/100
+2 Jet using the DNN: 2.8880241518023224 ± 0.1083648124612912../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+../dataset-and-plotting/nnPlotting.py:512: RuntimeWarning: invalid value encountered in double_scalars
+  this_sens = 2 * ((s + b) * math.log(1 + s / b) - s) #calcs sensivity for each bin
+../dataset-and-plotting/nnPlotting.py:513: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_ds = 2 * math.log(1 + s/b)
+../dataset-and-plotting/nnPlotting.py:514: RuntimeWarning: invalid value encountered in double_scalars
+  this_dsens_db = 2 * (math.log(1 + s/b) - s/b)
+
+3 Jet using the DNN: 1.5541725284459569 ± 0.03802062270157173
+Combined Sensitivity 3.279654821710605 ± 0.09711078338647154
+Training Model 79/100
+2 Jet using the DNN: 2.7296632199553215 ± 0.09536965977041124
+3 Jet using the DNN: 1.5013832037492225 ± 0.03537123685217933
+Combined Sensitivity 3.1153190557111694 ± 0.08528453472932984
+Training Model 80/100
+2 Jet using the DNN: 2.7501327937377806 ± 0.09358374920529616
+3 Jet using the DNN: 1.6149348638741698 ± 0.04846963353641239
+Combined Sensitivity 3.189238937073899 ± 0.08434857521532949
+Training Model 81/100
+2 Jet using the DNN: 2.7226571469252536 ± 0.103809398170697
+3 Jet using the DNN: 1.536247166201661 ± 0.0367008502677369
+Combined Sensitivity 3.1261665495244806 ± 0.0921915516913701
+Training Model 82/100
+2 Jet using the DNN: 2.768675169217329 ± 0.09017475943753378
+3 Jet using the DNN: 1.532638992732451 ± 0.04045657781700554
+Combined Sensitivity 3.164576507952454 ± 0.08129020275381807
+Training Model 83/100
+2 Jet using the DNN: 2.7667196807938623 ± 0.10001532443478943
+3 Jet using the DNN: 1.5420205704459 ± 0.03828500660423147
+Combined Sensitivity 3.167422490254559 ± 0.08932875413375384
+Training Model 84/100
+2 Jet using the DNN: 2.667535285516768 ± 0.08503905278112153
+3 Jet using the DNN: 1.515080318694038 ± 0.038088693761413786
+Combined Sensitivity 3.0677700160818855 ± 0.07629964470419691
+Training Model 85/100
+2 Jet using the DNN: 2.8368363210769196 ± 0.10296194626870472
+3 Jet using the DNN: 1.5820096230251552 ± 0.04446913453587083
+Combined Sensitivity 3.2481371214783135 ± 0.09249576453275313
+Training Model 86/100
+2 Jet using the DNN: 2.6586347415152827 ± 0.08931753525361964
+3 Jet using the DNN: 1.5145049529463075 ± 0.03495892358630672
+Combined Sensitivity 3.059748999720554 ± 0.07951422204676419
+Training Model 87/100
+2 Jet using the DNN: 2.749971800410404 ± 0.09112902289183668
+3 Jet using the DNN: 1.5757025706039325 ± 0.04007645123367095
+Combined Sensitivity 3.1694137461146155 ± 0.0815406684777011
+Training Model 88/100
+2 Jet using the DNN: 2.803081883537182 ± 0.11436494992433194
+3 Jet using the DNN: 1.5696371754921281 ± 0.04225608852923886
+Combined Sensitivity 3.2126358194637095 ± 0.10189885421894355
+Training Model 89/100
+2 Jet using the DNN: 2.694723675834749 ± 0.0967532516924765
+3 Jet using the DNN: 1.5732623872531561 ± 0.044857925402873484
+Combined Sensitivity 3.120367002172956 ± 0.08656223308425966
+Training Model 90/100
+2 Jet using the DNN: 2.8290557348797143 ± 0.09823598973471186
+3 Jet using the DNN: 1.473092442444195 ± 0.03401156383156975
+Combined Sensitivity 3.189601494707764 ± 0.08853618827823118
+Training Model 91/100
+2 Jet using the DNN: 2.631216807939448 ± 0.08963892629844092
+3 Jet using the DNN: 1.5539638135021334 ± 0.039165136949369024
+Combined Sensitivity 3.0558313801741663 ± 0.07971160833085732
+Training Model 92/100
+2 Jet using the DNN: 2.6745579499586736 ± 0.08611692794322902
+3 Jet using the DNN: 1.6247854850931527 ± 0.0448771587048558
+Combined Sensitivity 3.1294069885932916 ± 0.0772002296943567
+Training Model 93/100
+2 Jet using the DNN: 2.6506625786607914 ± 0.08886645136173538
+3 Jet using the DNN: 1.5237101726014848 ± 0.03923144580875922
+Combined Sensitivity 3.057401641263693 ± 0.07948630558586559
+Training Model 94/100
+2 Jet using the DNN: 2.7531639067672353 ± 0.0962845376772229
+3 Jet using the DNN: 1.5071828611156375 ± 0.035603460252741775
+Combined Sensitivity 3.1387117858074425 ± 0.08617032370493204
+Training Model 95/100
+2 Jet using the DNN: 2.7630971303873966 ± 0.09936036045518433
+3 Jet using the DNN: 1.5539421742398938 ± 0.04254993047933633
+Combined Sensitivity 3.170085492985398 ± 0.08908031406481358
+Training Model 96/100
+2 Jet using the DNN: 2.7340352363407523 ± 0.09252452968208433
+3 Jet using the DNN: 1.6130140427276365 ± 0.042156246074906985
+Combined Sensitivity 3.1743917489165367 ± 0.08251822127359115
+Training Model 97/100
+2 Jet using the DNN: 2.801293549185312 ± 0.09924941598714308
+3 Jet using the DNN: 1.5652823607290647 ± 0.03993169032487269
+Combined Sensitivity 3.2089491141987274 ± 0.08880355357412004
+Training Model 98/100
+2 Jet using the DNN: 2.670653725395753 ± 0.09185454300870934
+3 Jet using the DNN: 1.6004782694940907 ± 0.04130019831436951
+Combined Sensitivity 3.113506385426729 ± 0.08159966941522212
+Training Model 99/100
+2 Jet using the DNN: 2.6959678614418103 ± 0.0986695799736981
+3 Jet using the DNN: 1.6230622418670313 ± 0.04843866806627458
+Combined Sensitivity 3.1468355137981967 ± 0.08814718749878829
+Total Time Taken 149301.0037047863
+2 Jets Mean =  2.741
+2 Jets Standard Dev. =  0.055
+3 Jets Mean =  1.56
+3 Jets Standard Dev. =  0.04
+Combined Mean =  3.154
+Combined Standard Dev. =  0.051
